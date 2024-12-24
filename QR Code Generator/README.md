@@ -1,102 +1,91 @@
 # QR Code Generator
 
-The QR Code Generator project demonstrates how to create and save QR codes using Python, providing an efficient and user-friendly way to encode and share information such as text, URLs, contact details, and more.
+This project provides a simple Python-based QR code generator using the `qrcode` library. It allows users to generate QR codes from any text or URL input.
 
----
+<div style="text-align:center;">
+  <img src="./QR Code Generator Thumbnail.jpg" alt="qr code Project Thumbnail" width="500px" height="auto">
+</div>
 
 ## Features
 
-### QR Code Generation:
+- Generate QR codes for any text, URL, or data.
+- Customizable QR code parameters like size and error correction.
+- Easily integrate with other Python projects.
 
-- Encode data such as text, URLs, Wi-Fi credentials, and contact details into QR codes.
-- Save the generated QR codes as PNG images for sharing or printing.
+## Requirements
 
-### Customization Options:
+To run this project, you'll need Python 3.x and the following libraries:
 
-- Configure QR code size, border, and error correction levels.
+- `qrcode`: For generating QR codes.
+- `pillow`: For image handling (optional).
 
-### Lightweight and Easy-to-Use:
+### Installation
 
-- Minimal dependencies for smooth setup and execution.
+1. Clone the repository:
 
----
+   ```bash
+   git clone https://github.com/tejasb15/Python-Projects.git
+   cd Python-Projects
+   ```
 
-## Architecture
+2. Install the necessary dependencies:
 
-The project structure is straightforward, focusing on user interaction to input data, generate a QR code, and save it as an image file.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+   Or, if you're only installing the required libraries individually:
 
-## Setup Guide
+   ```bash
+   pip install qrcode
+   ```
 
-### Prerequisites
+## Usage
 
-- Python 3.6+ installed on your system.
-- Basic knowledge of Python programming.
+1. Open the project directory:
 
----
+   ```bash
+   cd Python-Projects/QR Code Generator
+   ```
 
-### Steps
+2. Run the script to generate a QR code:
 
-#### 1. Clone the Repository
+   ```bash
+   python qr_code.py
+   ```
 
-```bash
-git clone https://github.com/tejasb15/qr-code-generator.git
-cd qr-code-generator
+   You will be prompted to enter the data (text, URL, etc.) you want to encode in the QR code.
+
+3. The generated QR code will be saved as an image file in the current directory.
+
+## Example
+
+To generate a QR code for a URL:
+
+```python
+import qrcode
+
+# Data to encode
+data = "https://www.example.com"
+
+# Create a QR code instance
+qr = qrcode.QRCode(
+    version=1,  # Version of the QR code (1 is the smallest)
+    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Error correction level
+    box_size=10,  # Size of each box in the QR code grid
+    border=4,  # Thickness of the border
+)
+
+# Add data to the QR code
+qr.add_data(data)
+qr.make(fit=True)
+
+# Create an image from the QR code
+img = qr.make_image(fill="black", back_color="white")
+
+# Save the image
+img.save("example_qr.png")
 ```
-
-#### 2. Create a Virtual Environment (Optional)
-
-```bash
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
-```
-
-#### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-#### 4. Run the Script
-
-```bash
-python qr_code_generator.py
-```
-
-#### 5. Input the Data
-
-Provide the data to be encoded (e.g., a URL or text).
-
-#### 6. Save the QR Code
-
-The generated QR code will be saved as a PNG file (e.g., `qrcode.png`) in the project directory.
-
----
-
-## Testing
-
-### Input Examples:
-
-- Plain text: `"Hello, World!"`
-- URL: `"https://github.com/tejasb15"`
-- Wi-Fi credentials: `"WIFI:S:NetworkName;T:WPA;P:Password;;"`
-
-### Output:
-
-The QR code images are generated and saved in the project directory, ready to be scanned using a QR code reader.
-
----
-
-## Outcomes
-
-This project demonstrates:
-
-- The ability to efficiently generate QR codes for various data types.
-- The usage of Python libraries (`qrcode`, `Pillow`) to create dynamic QR codes.
-- A simple, reusable structure for QR code generation in Python projects.
-
----
 
 ## References
 
@@ -108,12 +97,8 @@ For additional learning, explore:
 
 - [QR Code Standards](https://www.qrcode.com/en/about/)
 
----
-
 ## Author
 
 **Tejas Bharambe**  
-Full Stack Developer | Python Enthusiast
-
-- [GitHub](https://github.com/tejasb15)
-- [LinkedIn](https://linkedin.com/in/tejasbharambe)
+Full Stack Developer | AWS Enthusiast  
+[GitHub](https://github.com/tejasb15) | [LinkedIn](https://www.linkedin.com/in/tejasb15/)

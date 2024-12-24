@@ -3,7 +3,7 @@
 This repository is a collection of Python projects demonstrating various concepts, tools, and real-world applications. Each project is self-contained and focuses on a specific problem or domain.
 
 <div style="text-align:center;">
-  <img src="./Python Project Thumbnail.webp" alt="AWS Project Thumbnail" width="500px" height="auto">
+  <img src="./Python Project Thumbnail.webp" alt="Python Project Thumbnail" width="500px" height="auto">
 </div>
 
 ## About
