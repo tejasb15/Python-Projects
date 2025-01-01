@@ -1,1 +1,4 @@
 qrcode==8.0
+pyjokes==0.8.3
+pyttsx3==2.98
+SpeechRecognition==3.10.0
