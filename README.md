@@ -50,6 +50,16 @@ Hi, I’m Tejas Bharambe, a Python Developer passionate about creating efficient
   - Provides hands-on experience with Python’s `re` module.
 - [View Project Details](./E-Mail%20Validation/)
 
+### 3. **Voice Assistant**
+
+- **Description:** A Python-based interactive assistant that processes user voice commands and provides spoken responses. This project showcases practical implementation of voice recognition and synthesis technologies.
+- **Key Features:**
+  - Speech recognition using Google Speech Recognition API.
+  - Text-to-speech responses with `pyttsx3`.
+  - Executes common tasks like telling time, opening websites, and playing music.
+  - Includes entertaining functionalities like telling jokes.
+- [View Project Details](./Voice%20Assistant/)
+
 ## Contact
 
 - **Name:** Tejas Bharambe

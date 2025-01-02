@@ -19,7 +19,7 @@ To run this project, you'll need Python 3.x and the following libraries:
 - `qrcode`: For generating QR codes.
 - `pillow`: For image handling (optional).
 
-### Installation
+## Installation
 
 1. Clone the repository:
 

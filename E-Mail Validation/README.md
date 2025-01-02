@@ -18,7 +18,7 @@ To run this project, you'll need Python 3.x and the following libraries:
 
 - `re`: Python’s standard library for regular expression
 
-### Installation
+## Installation
 
 1. Clone the repository:
 
